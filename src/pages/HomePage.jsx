@@ -1,6 +1,13 @@
 import React from "react";
 import { Navbar } from "../component";
-import { Cluster, FAQS, HeroSection, Priority, StepsToContribute } from "../container";
+import {
+  Cluster,
+  FAQS,
+  HeroSection,
+  Priority,
+  Signup,
+  StepsToContribute,
+} from "../container";
 
 const HomePage = () => {
   return (
@@ -11,6 +18,7 @@ const HomePage = () => {
       <Priority />
       <FAQS />
       <Cluster />
+      <Signup />
     </div>
   );
 };

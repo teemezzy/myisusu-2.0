@@ -3,7 +3,7 @@ import { steps } from "./steps";
 
 const StepsToContribute = () => {
   return (
-    <div className="sm:grid sm:grid-cols-2 gap-2 sm:gap-6 lg:gap-9 bg-bgDarkWhite universal_padding">
+    <div className="py-7 sm:grid sm:grid-cols-2 gap-2 sm:gap-6 lg:gap-9 bg-bgDarkWhite universal_padding">
       <h1 className="text-center sm:text-left text-contriMobile text-logoColor font-semibold w-full h-fit break-inside-avoid mt-2">
         Start Contributing In These Few Steps
       </h1>

@@ -7,6 +7,7 @@ module.exports = {
         logoColor: "#3F3F95",
         googleColor: "#ADAD96",
         colorWhite: "#FFFFFF",
+        bgDarkWhite: "#F5F5F7",
       },
       fontSize: {
         introH1Mobile: ["28px", { lineHeight: "42px" }],
@@ -22,7 +23,7 @@ module.exports = {
 
         // Sign up for free
         signMobile: ["26px", { lineHeight: "39px" }],
-        contriDesktop: ["44px", { lineHeight: "66px" }],
+        contriDesktop44: ["44px", { lineHeight: "66px" }],
         phoneMobile: ["13px", { lineHeight: "20px" }],
         phoneMobileTwo: ["20px", { lineHeight: "30px" }],
       },

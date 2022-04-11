@@ -10,11 +10,11 @@ import PriorityList from "./PriorityList";
 const Priority = () => {
   return (
     <div className="w-full bg-bgWhite universal_padding">
-      <div className="pt-5 xl:pt-10 2xl:pt-28">
-        <h1 className="text-contriMobile xl:text-contriDesktop text-logoColor font-bold mb-3 lg:w-[30%] xl:w-[38%]">
+      <div className="pt-5 lg:pt-12 2xl:pt-28 lg:pb-6">
+        <h1 className="text-contriMobile lg:text-signMobile xl:text-contriDesktop text-logoColor font-bold mb-3 lg:w-[30%] xl:w-[38%]">
           Keeping your money safe is our priority.
         </h1>
-        <p className="text-introPMobile text-logoColor font-medium mb-5 sm:w-3/4 lg:w-7/12">
+        <p className="text-introPMobile text-logoColor font-medium mb-5 sm:w-3/4 lg:w-6/12">
           Trust is our currency. We are committed to the security of your money
           and the protection of your account.
         </p>

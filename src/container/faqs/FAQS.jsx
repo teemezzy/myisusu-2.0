@@ -35,7 +35,7 @@ const FAQS = () => {
           />
         </div>
 
-        <div className="flex justify-center sm:absolute sm:w-fit right-9 lg:right-40 xl:right-80 bottom-9">
+        <div className="flex justify-center sm:absolute sm:w-fit right-9 sm:right-[50px] lg:right-[180px] xl:right-[340px] 2xl:right-[880px] bottom-9 sm:bottom-16">
           <p className="text-googleDesktop xl:text-phoneMobileTwo  text-gold font-semibold flex items-center">
             See All FAQs{" "}
             <span className="ml-2">
