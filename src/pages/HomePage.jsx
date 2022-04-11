@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../component";
+import { Footer, Navbar } from "../component";
 import {
   Cluster,
   FAQS,
@@ -19,6 +19,7 @@ const HomePage = () => {
       <FAQS />
       <Cluster />
       <Signup />
+      <Footer />
     </div>
   );
 };

@@ -53,6 +53,23 @@
   border-radius: 30px;
 }
 
+/* footer */
+.footer_div {
+  @apply mb-12;
+}
+
+.footer_header {
+  @apply text-introPDesktop font-bold text-logoColor mb-8 md:text-footermd lg:text-introPDesktop;
+}
+
+.footer_ui li {
+  @apply text-introPDesktop font-light text-logoColor mb-3 md:text-footermd lg:text-introPDesktop;
+}
+
+.footer_ui li a {
+  @apply hover:text-gold;
+}
+
 .sbjsb {
   color: #bdbd87;
 }

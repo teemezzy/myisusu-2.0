@@ -26,6 +26,9 @@ module.exports = {
         contriDesktop44: ["44px", { lineHeight: "66px" }],
         phoneMobile: ["13px", { lineHeight: "20px" }],
         phoneMobileTwo: ["20px", { lineHeight: "30px" }],
+
+        // footer
+        footermd: ["15px", { lineHeight: "22.5px" }],
       },
       backgroundColor: {
         bgWhite: "#FFFFFF",
