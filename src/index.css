@@ -7,7 +7,7 @@
 }
 
 .universal_padding {
-  @apply px-3 sm:px-8 md:px-10 xl:px-32 2xl:px-80;
+  @apply px-3 sm:px-8 md:px-10 xl:px-32 2xl:px-56;
 }
 
 
@@ -76,9 +76,5 @@
 }
 
 .footer_icons {
-  @apply text-white bg-logoColor rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px];
-}
-
-.sbjsb {
-  color: #bdbd87;
+  @apply text-white bg-logoColor hover:bg-gold transition-all duration-500 rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px];
 }

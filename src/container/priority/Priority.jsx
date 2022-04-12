@@ -22,7 +22,7 @@ const Priority = () => {
           LEARN MORE
         </button>
 
-        <div className="lg:w-fit lg:h-[10rem] ml-auto lg:-mt-24 xl:-mt-44 mb-auto">
+        <div className="lg:w-fit lg:h-[10rem] ml-auto lg:-mt-24 xl:-mt-44 2xl:-mt-36 2xl:-mr-[102px] mb-auto">
           <div className="flex h-[120px] w-fit ml-auto relative">
             <img
               src={priorityone}
@@ -61,7 +61,7 @@ const Priority = () => {
           </div>
         </div>
 
-        <div className="relative pl-12 lg:mr-auto lg:pl-0 lg:flex lg:flex-row lg:justify-end lg:-mt-[15rem] lg:h-fit xl:mr-5">
+        <div className="relative pl-12 lg:mr-auto lg:pl-0 lg:flex lg:flex-row lg:justify-end lg:-mt-[15rem] lg:h-fit xl:mr-5 2xl:-mr-20">
           <div className="flex flex-col">
             <img
               src={prioritytwo}
