@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <MidNav />
 
-      <div className="sm:hidden cursor-pointer">
+      <div className="sm:hidden cursor-pointer bg-transparent">
         {openNav ? (
           <GrClose
             className="mt-4 transition-all duration-300 rotate-180"
