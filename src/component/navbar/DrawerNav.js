@@ -5,30 +5,25 @@ import { navList } from "./navList";
 const DrawerNav = ({ openNav, setOpenNav }) => {
   return (
     <>
-      <div
-        className={`absolute top-[65px] pt-14 right-0 transition-all duration-500 z-50 h-screen w-[60%] bg-logoColor text-white sm:hidden`}
-        onClick={() => setOpenNav(!openNav)}
-      >
-        {navList.map((nav) => (
-          <p
-            key={nav.id}
-            className="flex justify-center mb-12 items-center font-semibold text-googleMobile lg:text-googleDesktop hover:text-gold"
-          >
-            <Link to={nav.path} className="mr-1">
-              {nav.name}
-            </Link>
-            <span className="cursor-pointer">{nav.icons}</span>
-          </p>
-        ))}
+      {navList.map((nav) => (
+        <p
+          key={nav.id}
+          className="flex justify-center mb-12 items-center font-semibold text-googleMobile lg:text-googleDesktop hover:text-gold"
+        >
+          <Link to={nav.path} className="mr-1">
+            {nav.name}
+          </Link>
+          <span className="cursor-pointer">{nav.icons}</span>
+        </p>
+      ))}
 
-        <div className="sm:hidden items-center gap-10 flex flex-col">
-          <button className="button text-gold hover:bg-gold hover:text-colorWhite">
-            Login
-          </button>
-          <button className="button bg-gold text-white hover:bg-white hover:text-gold">
-            Sign Up
-          </button>
-        </div>
+      <div className="sm:hidden items-center gap-10 flex flex-col">
+        <button className="button text-gold hover:bg-gold hover:text-colorWhite">
+          Login
+        </button>
+        <button className="button bg-gold text-white hover:bg-white hover:text-gold">
+          Sign Up
+        </button>
       </div>
     </>
   );

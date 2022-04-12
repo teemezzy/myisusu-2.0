@@ -25,14 +25,27 @@ const Navbar = () => {
 
       <div className="sm:hidden cursor-pointer">
         {openNav ? (
-          <GrClose className="mt-4 transition-all duration-300 rotate-180" size={25} onClick={mobileNav} />
+          <GrClose
+            className="mt-4 transition-all duration-300 rotate-180"
+            size={25}
+            onClick={mobileNav}
+          />
         ) : (
-          <AiOutlineMenu className="mt-4 transition-all duration-300 rotate-[360deg]" size={25} onClick={mobileNav} />
+          <AiOutlineMenu
+            className="mt-4 transition-all duration-300 rotate-[360deg]"
+            size={25}
+            onClick={mobileNav}
+          />
         )}
       </div>
 
       {openNav && (
-        <DrawerNav openNav={openNav} setOpenNav={setOpenNav} />
+        <div
+          className={`absolute top-[65px] pt-14 right-0 transition-all duration-500 z-50 h-screen w-[60%] bg-logoColor text-white sm:hidden`}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          <DrawerNav openNav={openNav} setOpenNav={setOpenNav} />
+        </div>
       )}
     </nav>
   );
