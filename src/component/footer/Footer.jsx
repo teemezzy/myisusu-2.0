@@ -1,6 +1,9 @@
 import React from "react";
 import { logo } from "../../assets";
 import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi"
+import { AiOutlineLinkedin } from "react-icons/ai"
 
 const Footer = () => {
   return (
@@ -75,15 +78,22 @@ const Footer = () => {
           <h3 className="footer_header">Support</h3>
           <ul className="footer_ui">
             <li>
-              <Link to="">Support support@myisusu.com</Link>
+              <Link to="">support@myisusu.com</Link>
             </li>
           </ul>
         </div>
       </div>
 
-
-      <div>
-          
+      <div className="flex border-t border-gold pt-3 pb-8 gap-2 -mt-5 sm:justify-end sm:-mt-3">
+        <a href="https://" target='_blank' rel="noreferrer">
+          <FiTwitter className="footer_icons" />
+        </a>
+        <a href="https://" target='_blank' rel="noreferrer">
+          <FaInstagram className="footer_icons" />
+        </a>
+        <a href="https://" target='_blank' rel="noreferrer">
+          <AiOutlineLinkedin className="footer_icons" />
+        </a>
       </div>
     </div>
   );

@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 .universal_padding {
   @apply px-3 sm:px-8 md:px-10 xl:px-32 2xl:px-80;
 }
+
 
 .button {
   @apply border border-gold font-semibold rounded-3xl px-6 pb-2 pt-1 text-googleMobile lg:text-googleDesktop transition-all duration-300;
@@ -67,7 +72,11 @@
 }
 
 .footer_ui li a {
-  @apply hover:text-gold;
+  @apply hover:text-gold transition-all duration-300;
+}
+
+.footer_icons {
+  @apply text-white bg-logoColor rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px];
 }
 
 .sbjsb {

@@ -18,7 +18,7 @@ const Signup = () => {
             className="text-phoneMobile font-light text-bgDarkWhite border-2 border-gold rounded-[15px] bg-logoColor w-full pt-2 pl-6 mb-7 sm:text-introPMobile sm:py-1 sm:pl-4 sm:h-fit mt-8 xl:py-2 2xl:py-3"
           />
 
-          <button className="text-introPDesktop text-gold font-semibold bg-bgWhite rounded-[15px] px-[26px] py-[6px] sm:text-googleDesktop sm:px-[17px] sm:py-[4px] sm:absolute sm:bottom-[73px] sm:right-3 lg:bottom-[90px] xl:py-[8px] xl:bottom-[112px] 2xl:py-[13px] 2xl:bottom-[104px]">
+          <button className="text-introPDesktop text-gold font-semibold bg-bgWhite hover:text-white hover:bg-gold transition-all duration-300 rounded-[15px] px-[26px] py-[6px] sm:text-googleDesktop sm:px-[17px] sm:py-[4px] sm:absolute sm:bottom-[73px] sm:right-3 lg:bottom-[90px] xl:py-[8px] xl:bottom-[112px] 2xl:py-[13px] 2xl:bottom-[104px]">
             Sign Up For Free
           </button>
         </div>
