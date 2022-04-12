@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="mb-8 sm:mb-0 w-full items-start">
         <div className=" mb-4 md:mb-6">
           <h1 className="text-introH1Mobile md:text-contriDesktop lg:text-introH1Desktop font-semibold text-logoColor pb-2 w-10/12 sm:w-10/12 md:w-full">
-            Stop Keeping Your <span className="text-gold">Money</span> Idle. <br />Start Contributing The <span className="text-gold">Isusu</span> Way.
+            Stop Keeping Your <span className="text-gold">Money</span> Idle. <br />Start Contributing The <span className="text-gold">MyIsusu</span> Way.
           </h1>
           <p className="text-introPMobile xm:text-googleMobile lg:text-introPMobile text-logoColor font-normal sm:w-10/12 md:w-7/12">
             Build Your Discipline. Save At Your Own Pace,<br className="sm:hidden"/> With Your Own Cluster
