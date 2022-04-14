@@ -48,7 +48,7 @@
 }
 
 .cluster_li {
-  @apply text-googleDesktop lg:text-contriMobile font-bold text-logoColor;
+  @apply text-googleDesktop lg:text-contriMobile xl:text-contriDesktop font-bold text-logoColor;
 }
 
 .signup form {
@@ -62,11 +62,11 @@
 }
 
 .footer_header {
-  @apply text-introPDesktop font-bold text-logoColor mb-8 md:text-footermd lg:text-introPDesktop;
+  @apply text-introPDesktop font-bold text-logoColor mb-8 md:text-footermd lg:text-introPDesktop xl:text-introH1Mobile 2xl:text-contriDesktop;
 }
 
 .footer_ui li {
-  @apply text-introPDesktop font-light text-logoColor mb-3 md:text-footermd lg:text-introPDesktop;
+  @apply text-introPDesktop font-light text-logoColor mb-3 md:text-footermd lg:text-introPDesktop xl:text-introH1Mobile 2xl:text-contriDesktop;
 }
 
 .footer_ui li a {
@@ -74,7 +74,7 @@
 }
 
 .footer_icons {
-  @apply text-white bg-logoColor hover:bg-gold transition-all duration-500 rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px];
+  @apply text-white bg-logoColor hover:bg-gold transition-all duration-500 rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px] xl:text-[40px] 2xl:text-[50px];
 }
 
 .signup_form {

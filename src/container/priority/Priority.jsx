@@ -18,7 +18,7 @@ const Priority = () => {
           Trust is our currency. We are committed to the security of your money
           and the protection of your account.
         </p>
-        <button className="text-gold border-none text-introPMobile lg:text-signinlg">
+        <button className="text-gold border-none text-introPMobile lg:text-signinlg xl:mb-2">
           LEARN MORE
         </button>
 

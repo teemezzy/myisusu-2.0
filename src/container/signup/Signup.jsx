@@ -3,7 +3,7 @@ import React from "react";
 const Signup = () => {
   return (
     <div className="sm:px-0 signup mb-6 w-full">
-      <form className="pt-7 px-7 sm:pr-0 sm:w-full sm:grid sm:grid-cols-2 lg:px-16 lg:pt-10 xl:px-40 xl:pt-14 2xl:px-[220px]">
+      <form className="pt-7 px-7 sm:pr-0 sm:w-full sm:grid sm:grid-cols-2 lg:px-16 lg:pt-10 xl:px-40 xl:py-8 xl:pt-14 2xl:px-[220px]">
         <div className="mb-7">
           <h1 className="text-signMobile text-colorWhite font-bold mb-6 lg:text-contriDesktop xl:text-contriDesktop44">
             Sign Up For Free.
