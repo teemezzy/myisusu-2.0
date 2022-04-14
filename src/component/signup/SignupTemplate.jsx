@@ -10,7 +10,7 @@ import CustomInput, {
 const SignupTemplate = () => {
   return (
     <div className="md:flex md:items-center">
-      <div className="text-center mb-6 pt-4 w-full">
+      <div className="text-center pb-6 pt-4 w-full">
         <div className="md:mb-20 lg:mb-0">
           <img
             src={logo}
