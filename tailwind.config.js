@@ -8,6 +8,8 @@ module.exports = {
         googleColor: "#ADAD96",
         colorWhite: "#FFFFFF",
         bgDarkWhite: "#F5F5F7",
+        signupharsh: "#A2A2C5",
+        orColor: "#515154",
       },
       fontSize: {
         introH1Mobile: ["28px", { lineHeight: "42px" }],
@@ -29,6 +31,9 @@ module.exports = {
 
         // footer
         footermd: ["15px", { lineHeight: "22.5px" }],
+
+        //sign in
+        signinsm: ["10px", { lineHeight: "15px" }],
       },
       backgroundColor: {
         bgWhite: "#FFFFFF",
@@ -41,14 +46,14 @@ module.exports = {
         bgjoinone: "#FFEFE0",
         bgstart: "#B1BAD4",
         bgstartone: "#BDE2FA",
-        bgcontribute: "#95953F"
+        bgcontribute: "#95953F",
       },
       screens: {
         xm: "481px",
       },
       width: {
-        image: "572px"
-      }
+        image: "572px",
+      },
     },
   },
   plugins: [],

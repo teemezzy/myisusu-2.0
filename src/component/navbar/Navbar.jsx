@@ -6,12 +6,13 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
 import DrawerNav from "./DrawerNav";
 
-const Navbar = () => {
+const Navbar = ({ signUp, login}) => {
   const [openNav, setOpenNav] = useState(false);
 
   const mobileNav = () => {
     setOpenNav(!openNav);
   };
+
 
   return (
     <nav className="relative flex justify-between items-center universal_padding py-2">
@@ -21,7 +22,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <MidNav />
+      <MidNav signUp={signUp} login={login} />
 
       <div className="sm:hidden cursor-pointer bg-transparent">
         {openNav ? (
@@ -44,7 +45,12 @@ const Navbar = () => {
           className={`absolute top-[65px] pt-14 right-0 transition-all duration-500 z-50 h-screen w-[60%] bg-logoColor text-white sm:hidden`}
           onClick={() => setOpenNav(!openNav)}
         >
-          <DrawerNav openNav={openNav} setOpenNav={setOpenNav} />
+          <DrawerNav
+            openNav={openNav}
+            setOpenNav={setOpenNav}
+            signUp={signUp}
+            login={login}
+          />
         </div>
       )}
     </nav>

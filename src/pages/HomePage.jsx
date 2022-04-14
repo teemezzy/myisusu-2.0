@@ -9,10 +9,10 @@ import {
   StepsToContribute,
 } from "../container";
 
-const HomePage = () => {
+const HomePage = ({ signUp, login}) => {
   return (
     <div>
-      <Navbar />
+      <Navbar signUp={signUp} login={login} />
       <HeroSection />
       <StepsToContribute />
       <Priority />

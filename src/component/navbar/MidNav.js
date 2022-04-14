@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { navList } from "./navList";
 
-const MidNav = () => {
+const MidNav = ({ signUp, login}) => {
+
+  
+
   return (
     <>
       <div className="items-center gap-5 hidden sm:flex">
@@ -20,10 +23,10 @@ const MidNav = () => {
       </div>
 
       <div className="hidden sm:flex items-center gap-5">
-        <button className="button text-gold hover:bg-gold hover:text-colorWhite">
+        <button className="button text-gold hover:bg-gold hover:text-colorWhite" onClick={login}>
           Login
         </button>
-        <button className="button bg-gold text-white hover:bg-white hover:text-gold">
+        <button className="button bg-gold text-white hover:bg-white hover:text-gold" onClick={signUp}>
           Sign Up
         </button>
       </div>

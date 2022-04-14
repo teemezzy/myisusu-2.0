@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { navList } from "./navList";
 
-const DrawerNav = ({ openNav, setOpenNav }) => {
+const DrawerNav = ({ openNav, setOpenNav, signUp, login }) => {
   return (
     <>
       {navList.map((nav) => (
@@ -18,10 +18,10 @@ const DrawerNav = ({ openNav, setOpenNav }) => {
       ))}
 
       <div className="sm:hidden items-center gap-10 flex flex-col">
-        <button className="button text-gold hover:bg-gold hover:text-colorWhite">
+        <button className="button text-gold hover:bg-gold hover:text-colorWhite" onClick={login}>
           Login
         </button>
-        <button className="button bg-gold text-white hover:bg-white hover:text-gold">
+        <button className="button bg-gold text-white hover:bg-white hover:text-gold" onClick={signUp}>
           Sign Up
         </button>
       </div>

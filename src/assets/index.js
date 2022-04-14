@@ -18,6 +18,8 @@ import faqs from "./faqs.png";
 import faqsarrow from "./faqsarrow.png";
 import clusterone from "./clusterone.png";
 import clustertwo from "./clustertwo.png";
+import googleSignin from "./googleSignin.png";
+import signupGoody from "./signupGoody.png";
 
 export {
   frameone,
@@ -40,4 +42,6 @@ export {
   faqsarrow,
   clusterone,
   clustertwo,
+  googleSignin,
+  signupGoody,
 };
