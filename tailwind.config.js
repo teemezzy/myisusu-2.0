@@ -34,6 +34,7 @@ module.exports = {
 
         //sign in
         signinsm: ["10px", { lineHeight: "15px" }],
+        signinlg: ["17px", { lineHeight: "26px" }],
       },
       backgroundColor: {
         bgWhite: "#FFFFFF",

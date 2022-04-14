@@ -4,18 +4,19 @@ import { logo, signupGoody } from "../../assets";
 import CustomInput, {
   CustomButton,
   CustomLogin,
+  CustomOr,
   CustomSupport,
 } from "./CustomInput";
 
 const SignupTemplate = () => {
   return (
     <div className="md:flex md:items-center">
-      <div className="text-center pb-6 pt-4 w-full">
+      <div className="text-center mb-12 md:mb-0 pt-4 w-full">
         <div className="md:mb-20 lg:mb-0">
           <img
             src={logo}
             alt="logo"
-            className="w-[100px] h-[52.57px] mx-auto md:mx-0 mb-2"
+            className="w-[100px] h-[52.57px] lg:w-[140px] lg:h-[80px] mx-auto md:mx-0 mb-2 lg:mb-4"
           />
           <h3 className="text-contriMobile md:text-contriDesktop lg:text-introH1Desktop text-logoColor font-semibold w-[80%] md:w-full mx-auto mb-2 md:text-left">
             Stop Keeping Your Money Idle.
@@ -29,7 +30,7 @@ const SignupTemplate = () => {
           <img
             src={signupGoody}
             alt="Goody"
-            className="w-[60%] md:w-[90%] lg:w-[90%]"
+            className="w-[60%] md:w-[90%] lg:w-[95%]"
           />
         </div>
       </div>
@@ -37,10 +38,10 @@ const SignupTemplate = () => {
       <div className="h-fit w-full">
         <form className="signup_form px-4 md:py-2">
           <div className="text-center mb-5 pt-3">
-            <header className="font-semibold text-phoneMobileTwo text-logoColor">
+            <header className="font-semibold text-signMobile md:text-contriMobile lg:text-contriDesktop text-logoColor">
               Create a Secure Account
             </header>
-            <p className="text-logoColor font-[275] text-introPMobile">
+            <p className="text-logoColor font-[275] text-introPMobile md:text-signinlg lg:text-phoneMobileTwo">
               Save your money, So your money can save you
             </p>
           </div>
@@ -58,8 +59,8 @@ const SignupTemplate = () => {
             <CustomButton buttonDetails="Create Account" />
           </div>
 
-          <div className="text-center mb-4">
-            <p className="text-logoColor text-signinsm font-normal mb-2">
+          <div className="text-center mb-4 md:mb-6">
+            <p className="text-logoColor text-signinsm md:text-signinlg lg:text-phoneMobileTwo font-normal mb-2">
               Got an account with us?{" "}
               <Link
                 to="/login"
@@ -70,11 +71,7 @@ const SignupTemplate = () => {
             </p>
 
             <div className="flex justify-center items-center w-[87%] mx-auto gap-1">
-              <div className="w-full h-[1px] bg-orColor" />
-              <p className="font-semibold text-signinsm text-orColor border border-orColor rounded-[100%] px-[2px] py-[1px]">
-                OR
-              </p>
-              <div className="w-full h-[1px] bg-orColor" />
+              <CustomOr />
             </div>
           </div>
 
