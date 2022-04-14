@@ -11,7 +11,7 @@ import CustomInput, {
 const Login = () => {
   return (
     <div className="universal_padding h-screen md:flex md:justify-center md:items-center">
-      <div className="md:flex md:items-center">
+      <div className="md:flex">
         <div className="text-center mb-12 md:mb-0 pt-4 w-full">
           <div className="md:mb-20 lg:mb-0">
             <img
