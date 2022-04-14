@@ -7,7 +7,7 @@ const FAQS = () => {
     <div className="universal_padding bg-bgDarkWhite">
       <div className="flex items-center pt-4 sm:pt-7 lg:pt-9 mb-12">
         <img src={faqs} alt="FAQS" className="mr-4 w-[35px] h-[35px]" />
-        <h1 className="text-introH1Mobile text-logoColor font-bold">FAQs</h1>
+        <h1 className="text-introH1Mobile lg:text-contriDesktop text-logoColor font-bold">FAQs</h1>
       </div>
 
       <div className="sm:grid sm:grid-cols-2 sm:mx-auto sm:gap-4 relative pb-8">
@@ -36,7 +36,7 @@ const FAQS = () => {
         </div>
 
         <div className="flex justify-center sm:absolute sm:w-fit right-9 sm:right-[50px] lg:right-[170px] xl:right-[340px] 2xl:right-[240px] bottom-9 sm:bottom-16">
-          <p className="text-googleDesktop xl:text-phoneMobileTwo  text-gold font-semibold flex items-center">
+          <p className="text-googleDesktop lg:text-phoneMobileTwo xl:text-contriMobile  text-gold font-semibold flex items-center">
             See All FAQs{" "}
             <span className="ml-2">
               <img src={faqsarrow} alt="arrow" />

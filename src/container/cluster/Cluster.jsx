@@ -48,7 +48,7 @@ const Cluster = () => {
               our special referral program.
             </p>
 
-            <button className="bg-gold text-colorWhite hover:bg-white hover:text-gold transition-all duration-300 text-googleDesktop lg:text-introPDesktop font-semibold rounded-[20px] px-8 py-2 flex ml-auto sm:ml-0">
+            <button className="bg-gold text-colorWhite hover:bg-white hover:text-gold transition-all duration-300 text-googleDesktop lg:text-phoneMobileTwo xl:text-contriMobile font-semibold rounded-[20px] px-8 py-2 flex ml-auto sm:ml-0">
               Get Started
             </button>
           </div>

@@ -4,7 +4,7 @@ import { steps } from "./steps";
 const StepsToContribute = () => {
   return (
     <div className="py-7 sm:grid sm:grid-cols-2 gap-2 sm:gap-6 lg:gap-9 bg-bgDarkWhite universal_padding">
-      <h1 className="text-center sm:text-left text-contriMobile text-logoColor font-semibold w-full h-fit break-inside-avoid mt-2">
+      <h1 className="text-center sm:text-left text-contriMobile md:text-introH1Mobile lg:text-contriDesktop 2xl:text-introH1Desktop text-logoColor font-semibold w-full h-fit break-inside-avoid mt-2">
         Start Contributing In These Few Steps
       </h1>
 
@@ -17,7 +17,7 @@ const StepsToContribute = () => {
         >
           <p className="start_number border_width">{step.number}</p>
           <div
-            className={`pt-3 body-shadow ${
+            className={`pt-7 body-shadow ${
               step.id === 1
                 ? "bg-bgcreateone"
                 : step.id === 2
@@ -47,10 +47,10 @@ const StepsToContribute = () => {
               />
             </div>
             <div className="mb-7 pl-6">
-              <p className="text-googleDesktop sm:text-introH1Mobile text-logoColor font-bold mb-3">
+              <p className="text-googleDesktop sm:text-introH1Mobile lg:text-contriDesktop text-logoColor font-bold mb-3">
                 {step.header}
               </p>
-              <p className="text-googleMobile sm:text-introPDesktop text-logoColor font-normal w-4/5">
+              <p className="text-googleMobile sm:text-introPDesktop lg:text-contriMobile text-logoColor font-normal w-4/5">
                 {step.headerTwo}
               </p>
             </div>
@@ -76,7 +76,7 @@ const StepsToContribute = () => {
       ))}
 
       <div className="flex justify-center sm:pl-6 sm:relative">
-        <button className=" text-googleDesktop text-colorWhite bg-bgcontribute rounded-[15px] py-2 px-5 sm:absolute sm:bottom-6 xl:bottom-20 sm:left-0 xl:left-40 hover:text-gold hover:bg-white transition-all duration-300">
+        <button className=" text-googleDesktop lg:text-contriMobile text-colorWhite bg-bgcontribute rounded-[15px] py-2 px-5 lg:py-3 lg:px-7 sm:absolute sm:bottom-6 xl:bottom-20 sm:left-0 xl:left-31 hover:text-gold hover:bg-white transition-all duration-300">
           Start Contributing
         </button>
       </div>

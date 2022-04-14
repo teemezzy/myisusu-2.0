@@ -2,7 +2,7 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <div className="px-3 sm:px-0 signup mb-6">
+    <div className="sm:px-0 signup mb-6 w-full">
       <form className="pt-7 px-7 sm:pr-0 sm:w-full sm:grid sm:grid-cols-2 lg:px-16 lg:pt-10 xl:px-40 xl:pt-14 2xl:px-[220px]">
         <div className="mb-7">
           <h1 className="text-signMobile text-colorWhite font-bold mb-6 lg:text-contriDesktop xl:text-contriDesktop44">
@@ -11,14 +11,13 @@ const Signup = () => {
           </h1>
         </div>
 
-        <div className="pb-11 sm:flex sm:relative sm:pr-3">
+        <div className="pb-11 sm:flex sm:relative sm:pr-3 sm:mt-5 lg:mt-10 h-fit">
           <input
             type="text"
+            className="border border-gold rounded-[15px] pt-3 pb-2 md:pb-3 pl-6 text-googleMobile sm:text-phoneMobile lg:text-googleDesktop xl:text-phoneMobileTwo w-full text-bgDarkWhite bg-logoColor mb-5 md:py-2 sm:pl-3"
             placeholder="Your Phone Number....."
-            className="text-phoneMobile font-light text-bgDarkWhite border-2 border-gold rounded-[15px] bg-logoColor w-full pt-2 pl-6 mb-7 sm:text-introPMobile sm:py-1 sm:pl-4 sm:h-fit mt-8 xl:py-2 2xl:py-3"
           />
-
-          <button className="text-introPDesktop text-gold font-semibold bg-bgWhite hover:text-white hover:bg-gold transition-all duration-300 rounded-[15px] px-[26px] py-[6px] sm:text-googleDesktop sm:px-[17px] sm:py-[4px] sm:absolute sm:bottom-[73px] sm:right-3 lg:bottom-[90px] xl:py-[8px] xl:bottom-[112px] 2xl:py-[13px] 2xl:bottom-[104px]">
+          <button className="bg-bgWhite text-gold border border-gold hover:text-white hover:bg-gold text-introPDesktop sm:text-footermd xl:text-phoneMobileTwo rounded-[15px] px-[26px] sm:px-[16px] py-[6px] sm:py-2 md:py-[11px] xl:py-[10px] sm:absolute sm:right-3 sm:top-0 transition-all duration-300">
             Sign Up For Free
           </button>
         </div>

@@ -48,13 +48,12 @@
 }
 
 .cluster_li {
-  @apply text-googleDesktop font-bold text-logoColor;
+  @apply text-googleDesktop lg:text-contriMobile font-bold text-logoColor;
 }
 
 .signup form {
   background: #3f3f95;
   box-shadow: 0px 6px 6px rgba(63, 63, 149, 0.25);
-  border-radius: 30px;
 }
 
 /* footer */
