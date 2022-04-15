@@ -25,7 +25,7 @@ const HeroSection = () => {
           <input
             type="text"
             className="flex flex-1 border border-gold rounded-2xl rounded-r pl-2 lg:pl-4 xl:pl-7 py-1 text-googleMobile sm:text-phoneMobile lg:text-googleDesktop 2xl:text-phoneMobileTwo"
-            placeholder="Your Phone Number"
+            placeholder="Email Address"
           />
           <button className="bg-gold border border-gold hover:bg-colorWhite hover:text-gold text-colorWhite text-googleMobile sm:text-phoneMobile lg:text-googleDesktop 2xl:text-phoneMobileTwo px-2 lg:px-2 xl:px-4 py-1 lg:py-2 rounded-xl relative -left-3  transition-all duration-300">
             Download the app

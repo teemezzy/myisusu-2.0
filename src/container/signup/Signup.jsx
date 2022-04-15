@@ -15,7 +15,7 @@ const Signup = () => {
           <input
             type="text"
             className="border border-gold rounded-[15px] pt-3 pb-2 md:pb-3 pl-6 text-googleMobile sm:text-phoneMobile lg:text-googleDesktop xl:text-phoneMobileTwo w-full text-bgDarkWhite bg-logoColor mb-5 md:py-2 sm:pl-3"
-            placeholder="Your Phone Number....."
+            placeholder="Email Address....."
           />
           <button className="bg-bgWhite text-gold border border-gold hover:text-white hover:bg-gold text-introPDesktop sm:text-footermd xl:text-phoneMobileTwo rounded-[15px] px-[26px] sm:px-[16px] py-[6px] sm:py-2 md:py-[11px] xl:py-[10px] sm:absolute sm:right-3 sm:top-0 transition-all duration-300">
             Sign Up For Free
