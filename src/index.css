@@ -62,11 +62,11 @@
 }
 
 .footer_header {
-  @apply text-introPDesktop font-bold text-logoColor mb-8 md:text-footermd lg:text-introPDesktop xl:text-introH1Mobile 2xl:text-contriDesktop;
+  @apply text-introPDesktop font-bold text-logoColor mb-8 md:text-footermd lg:text-introPDesktop xl:text-contriMobile;
 }
 
 .footer_ui li {
-  @apply text-introPDesktop font-light text-logoColor mb-3 md:text-footermd lg:text-introPDesktop xl:text-introH1Mobile 2xl:text-contriDesktop;
+  @apply text-introPDesktop font-light text-logoColor mb-3 md:text-footermd lg:text-introPDesktop xl:text-contriMobile;
 }
 
 .footer_ui li a {
@@ -74,7 +74,7 @@
 }
 
 .footer_icons {
-  @apply text-white bg-logoColor hover:bg-gold transition-all duration-500 rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px] xl:text-[40px] 2xl:text-[50px];
+  @apply text-white bg-logoColor hover:bg-gold transition-all duration-500 rounded-[100%] p-1 text-[20px] sm:text-[25px] lg:text-[30px];
 }
 
 .signup_form {

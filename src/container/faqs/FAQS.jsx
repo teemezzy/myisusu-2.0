@@ -29,7 +29,7 @@ const FAQS = () => {
             bodyOne="is suitable for anyone who wants the discipline to keep their savings and investments for a long period of time without tampering with them."
           />
         </div>
-        <div className="sm:col-span-2 mx-auto md:pl-24 2xl:pl-0 md:flex">
+        <div className="sm:col-span-2 mx-auto md:pl-24 2xl:pl-36 md:flex">
           <FaqsList
             header="How secure is my information?"
             nameOne="MyIsusu"
