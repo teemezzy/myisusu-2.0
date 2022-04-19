@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { logo } from '../assets'
 import { Link } from 'react-router-dom'
 import CustomInput, {
@@ -9,6 +9,9 @@ import CustomInput, {
 } from '../component/signup/CustomInput'
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <div className="universal_padding h-screen md:flex md:justify-center md:items-center">
       <div className="md:flex lg:justify-evenly">
