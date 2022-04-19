@@ -8,7 +8,7 @@ import { AiOutlineLinkedin } from "react-icons/ai"
 const Footer = () => {
   return (
     <div className="universal_padding">
-      <img src={logo} alt="logo" className="w-[100px] h-[46.75px] 2xl:w-[170px] 2xl:h-[100px] mb-4 2xl:mb-10" />
+      <img src={logo} alt="logo" className="w-[100px] h-[46.75px] xl:w-[110px] 2xl:h-[70px] mb-4 2xl:mb-10" />
 
       <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-4">
         <div className="footer_div">

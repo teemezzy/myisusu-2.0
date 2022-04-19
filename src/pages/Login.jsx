@@ -10,16 +10,18 @@ import CustomInput, {
 
 const Login = () => {
   return (
-    <div className='universal_padding h-screen md:flex md:justify-center md:items-center'>
-      <div className='md:flex'>
-        <div className='text-center mb-12 md:mb-0 pt-4 w-full'>
-          <div className='md:mb-20 lg:mb-0'>
-            <img
-              src={logo}
-              alt='logo'
-              className='w-[100px] h-[52.57px] lg:w-[140px] lg:h-[80px] mx-auto md:mx-0 mb-2 lg:mb-4'
-            />
-            <h3 className='text-contriMobile md:text-contriDesktop lg:text-introH1Desktop text-logoColor font-semibold w-[60%] md:w-full mx-auto mb-2 md:text-left'>
+    <div className="universal_padding h-screen md:flex md:justify-center md:items-center">
+      <div className="md:flex lg:justify-evenly">
+        <div className="text-center mb-12 md:mb-0 pt-4 w-full">
+          <div className="md:mb-20 lg:mb-0">
+            <Link to="/">
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[100px] h-[52.57px] lg:w-[140px] lg:h-[80px] mx-auto md:mx-0 mb-2 lg:mb-4 xl:mb-14 xl:-mt-20"
+              />
+            </Link>
+            <h3 className="text-contriMobile md:text-contriDesktop lg:text-introH1Desktop text-logoColor font-semibold w-[60%] md:w-full mx-auto mb-2 md:text-left">
               Pick up where you left off.
             </h3>
             <p className='text-signupharsh font-semibold text-googleDesktop md:text-contriMobile md:text-left'>

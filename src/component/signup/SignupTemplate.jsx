@@ -13,11 +13,13 @@ const SignupTemplate = () => {
     <div className="md:flex md:items-center">
       <div className="text-center mb-12 md:mb-0 pt-4 w-full">
         <div className="md:mb-20 lg:mb-0">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[100px] h-[52.57px] lg:w-[140px] lg:h-[80px] mx-auto md:mx-0 mb-2 lg:mb-4"
-          />
+          <Link to="/" className="mb-4">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[100px] h-[52.57px] lg:w-[140px] lg:h-[80px] mx-auto md:mx-0 mb-2 lg:mb-4"
+            />
+          </Link>
           <h3 className="text-contriMobile md:text-contriDesktop lg:text-introH1Desktop text-logoColor font-semibold w-[80%] md:w-full mx-auto mb-2 md:text-left">
             Stop Keeping Your Money Idle.
           </h3>
