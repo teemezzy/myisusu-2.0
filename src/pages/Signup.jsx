@@ -9,13 +9,18 @@ import CustomInput, {
 } from "../component/signup/CustomInput";
 
 const Signup = () => {
-  const [fullName, setFullName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
 
-  const fullNameInput = (e) => {
-    setFullName(e.target.value);
+  const firstNameInput = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const lastNameInput = (e) => {
+    setLastName(e.target.value);
   };
 
   const emailInput = (e) => {
@@ -33,13 +38,13 @@ const Signup = () => {
   const submit = (e) => {
     e.preventDefault();
     console.log(
-      `fullname: ${fullName}, emailAddress: ${email}, phoneInput: ${phoneNumber}, password: ${password}`
+      `firstName: ${firstName}, lastName: ${lastName}, emailAddress: ${email}, phoneInput: ${phoneNumber}, password: ${password}`
     );
   };
 
   return (
     <div className="universal_padding h-screen md:flex md:justify-center md:items-center">
-      <div className="md:flex md:items-center">
+      <div className="md:flex md:items-center 2xl:gap-40">
         <div className="text-center mb-12 md:mb-0 pt-4 w-full">
           <div className="md:mb-20 lg:mb-0">
             <Link to="/" className="mb-4">
@@ -80,10 +85,16 @@ const Signup = () => {
             {/* Custom input */}
             <div className="mx-auto w-[80%]">
               <CustomInput
-                label="Full Name"
+                label="First Name"
                 inputType="text"
-                value={fullName}
-                textInput={fullNameInput}
+                value={firstName}
+                textInput={firstNameInput}
+              />
+              <CustomInput
+                label="LAst Name"
+                inputType="text"
+                value={lastName}
+                textInput={lastNameInput}
               />
               <CustomInput
                 label="Email Address"

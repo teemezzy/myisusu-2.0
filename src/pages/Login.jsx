@@ -27,7 +27,7 @@ const Login = () => {
 
   return (
     <div className="universal_padding h-screen md:flex md:justify-center md:items-center">
-      <div className="md:flex lg:justify-evenly">
+      <div className="md:flex lg:justify-evenly 2xl:gap-60">
         <div className="text-center mb-12 md:mb-0 pt-4 w-full">
           <div className="md:mb-20 lg:mb-0">
             <Link to="/">
