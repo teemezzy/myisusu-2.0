@@ -18,7 +18,7 @@ const Navbar = ({ signUp, login}) => {
     <nav className="relative flex justify-between items-center universal_padding py-2">
       <div>
         <Link to="/">
-          <img src={logo} alt="frameone" height="50px" width="90px" />
+          <img src={logo} alt="frameone" className="w-[90px] h-[50px] xl:w-[120px] xl:h-[70px]" />
         </Link>
       </div>
 
