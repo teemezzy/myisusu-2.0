@@ -3,15 +3,18 @@ import React from 'react'
 import { googleSignin } from '../../assets'
 import { Link } from 'react-router-dom'
 
-const CustomInput = ({ label }) => {
+const CustomInput = ({ label, input, textInput, inputType }) => {
   return (
     <div className='mb-6'>
       <TextField
         id={label}
         label={label}
+        value={input}
+        onChange={textInput}
         variant='outlined'
         size='small'
         fullWidth
+        type={inputType}
         InputLabelProps={{
           style: {
             fontSize: '16px',
@@ -54,10 +57,10 @@ export const CustomSupport = ({ support }) => {
   )
 }
 
-export const CustomButton = ({ buttonDetails }) => {
+export const CustomButton = ({ buttonDetails, onSubmit }) => {
   return (
     <>
-      <button className='bg-logoColor font-bold text-white text-googleMobile md:text-signinlg lg:text-phoneMobileTwo hover:bg-gold hover:text-logoColor rounded-[20px] py-[7px] px-5'>
+      <button type='submit' className='bg-logoColor font-bold text-white text-googleMobile md:text-signinlg lg:text-phoneMobileTwo hover:bg-gold hover:text-logoColor rounded-[20px] py-[7px] px-5'>
         {buttonDetails}
       </button>
     </>
