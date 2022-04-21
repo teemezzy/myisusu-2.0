@@ -91,7 +91,7 @@ const Signup = () => {
                 textInput={firstNameInput}
               />
               <CustomInput
-                label="LAst Name"
+                label="Last Name"
                 inputType="text"
                 value={lastName}
                 textInput={lastNameInput}
