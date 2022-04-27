@@ -1,6 +1,6 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 // import useFetch from "./hooks/useFetch";
-import { Dashboard, HomePage, Login, Signup } from "./pages";
+import { Dashboard, HomePage, Login, Signup, Blog } from "./pages";
 
 function App() {
   const navigate = useNavigate();
@@ -16,19 +16,20 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
         <Route
           exact
-          path="/"
+          path='/'
           element={<HomePage signUp={signUp} login={login} />}
         />
-        <Route exact path="signup" element={<Signup login={login} />} />
-        <Route exact path="login" element={<Login />} />
-        <Route exact path="dashboard" element={<Dashboard />} />
+        <Route exact path='signup' element={<Signup login={login} />} />
+        <Route exact path='login' element={<Login />} />
+        <Route exact path='dashboard' element={<Dashboard />} />
+        <Route exact path='blog' element={<Blog />} />
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;
