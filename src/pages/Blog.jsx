@@ -1,5 +1,8 @@
 import React from 'react'
 import { Footer, Navbar } from '../component'
+import { FaInstagram } from 'react-icons/fa'
+import { FiTwitter } from 'react-icons/fi'
+import { AiOutlineLinkedin } from 'react-icons/ai'
 
 const Blog = () => {
     return (
@@ -129,7 +132,18 @@ const Blog = () => {
                 partner that can help you to steadily grow your wealth so lets
                 get started here.
               </p>
-              <h5 className='mb-32 text-center'>####### START HERE ####### </h5>
+              <h5 className=' mb-16 text-center'>####### START HERE ####### </h5>
+            </div>
+            <div className='flex pl-4 mb-32 gap-2 -mt-5 sm:justify-end sm:-mt-3 mr-32'>
+              <a href='https://www.twitter.com' target='_blank' rel='noreferrer'>
+                <FiTwitter className='footer_icons' />
+              </a>
+              <a href='https://www.instagram.com' target='_blank' rel='noreferrer'>
+                <FaInstagram className='footer_icons' />
+              </a>
+              <a href='https://www.linkedin.com' target='_blank' rel='noreferrer'>
+                <AiOutlineLinkedin className='footer_icons' />
+              </a>
             </div>
           </div>
         </div>
