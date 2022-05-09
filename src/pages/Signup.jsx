@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+// import useFetch  from '../hooks/useFetch'
 import { Link } from "react-router-dom";
 import { logo, signupGoody } from "../assets";
 import CustomInput, {
@@ -9,6 +10,24 @@ import CustomInput, {
 } from "../component/signup/CustomInput";
 
 const Signup = () => {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    }
+    fetch('http://myisusu.adeba.ng/isusu_api/create', requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        setData('V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU')
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }, [data])
+  
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -72,7 +91,7 @@ const Signup = () => {
         </div>
 
         <div className="h-fit w-full">
-          <form className="signup_form px-4 md:py-2" onSubmit={submit}>
+          <form className="signup_form px-4 md:py-2" onSubmit={submit} method='post'>
             <div className="text-center mb-5 pt-3">
               <header className="font-semibold text-signMobile md:text-contriMobile lg:text-contriDesktop text-logoColor">
                 Create a Secure Account
