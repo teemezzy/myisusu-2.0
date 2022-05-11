@@ -10,22 +10,24 @@ import CustomInput, {
 } from "../component/signup/CustomInput";
 
 const Signup = () => {
-  const [data, setData] = useState([])
+  const [ssdata, setSsData] = useState([])
   useEffect(() => {
     const requestOptions = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
+      headers: {
+        'api_key': 'V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU',
+      },
+      body: JSON.stringify(ssdata),
     }
-    fetch('http://myisusu.adeba.ng/isusu_api/create', requestOptions)
+    fetch('http://myisusu.adeba.ng/isusu_api/users/create', requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        setData('V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU')
+        setSsData(data.id)
       })
       .catch((error) => {
         console.error(error)
       })
-  }, [data])
+  }, [ssdata])
   
 
   const [firstName, setFirstName] = useState("");
