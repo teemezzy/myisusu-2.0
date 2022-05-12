@@ -14,6 +14,7 @@ const Login = () => {
   useEffect(() => {
     document.title = 'Login'
   }, [])
+  
 
   const requestOption = {
     method: 'POST',
@@ -21,7 +22,7 @@ const Login = () => {
     body: JSON.stringify(),
   }
   const { data } = useFetch(
-    'http://myisusu.adeba.ng/isusu_api/users/login',
+    'https://api.myisusu.com/users/login',
     requestOption
   )
   console.log(data)
