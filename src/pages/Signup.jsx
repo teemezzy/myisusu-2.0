@@ -12,8 +12,14 @@ import CustomInput, {
 
 const Signup = () => {
   const [data, setData] = useState(null)
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phoneNumber, setPhoneNumber] = useState('')
+  const [password, setPassword] = useState('')
 
   useEffect(() => {
+    document.title = 'MyIsusu | Sign Up'
     const createUser = {
       last_name: 'Abodunrin',
       first_name: 'Matthew',
@@ -25,8 +31,7 @@ const Signup = () => {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/JSON' },
-      body: createUser,
-      redirect: JSON.stringify(createUser),
+      body: JSON.stringify(createUser),
     }
 
     fetch('https://api.myisusu.com/users/create', requestOptions)
@@ -34,12 +39,6 @@ const Signup = () => {
       .then((data) => setData(data))
       .catch((error) => console.log(error))
   }, [])
-
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState('')
-  const [password, setPassword] = useState('')
 
   const firstNameInput = (e) => {
     setFirstName(e.target.value)

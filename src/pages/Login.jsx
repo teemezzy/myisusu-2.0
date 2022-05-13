@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import useFetch from '../hooks/useFetch'
+// import useFetch from '../hooks/useFetch'
 import { logo } from '../assets'
 import { Link } from 'react-router-dom'
 import CustomInput, {
@@ -10,25 +10,30 @@ import CustomInput, {
 } from '../component/signup/CustomInput'
 
 const Login = () => {
-
-  useEffect(() => {
-    document.title = 'Login'
-  }, [])
-  
-
-  const requestOption = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(),
-  }
-  const { data } = useFetch(
-    'https://api.myisusu.com/users/login',
-    requestOption
-  )
-  console.log(data)
-
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    document.title = 'MyIsusu | Login'
+
+    const createUser = {
+      email: 'abodunrinmatthew@gmail.com',
+      password: '1234567890',
+      api_key: 'V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU',
+    }
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/JSON' },
+      body: JSON.stringify(createUser),
+    }
+
+    fetch('https://api.myisusu.com/users/login', requestOptions)
+      .then((response) => response.JSON())
+      .then((data) => setData(data))
+      .catch((error) => console.log(error))
+  }, [])
 
   const textEmail = (e) => {
     setEmail(e.target.value)
@@ -39,8 +44,8 @@ const Login = () => {
   }
 
   const signIn = (e) => {
-    e.preventDefault()
-    console.log(`The email and password is ${email}:${password}`)
+    e.preventDefault();
+    console.log(`The email and password is ${email} and ${password}`)
   }
 
   return (
