@@ -29,7 +29,7 @@ const Login = () => {
       body: JSON.stringify(createUser),
     }
 
-    fetch('https://api.myisusu.com/users/login', requestOptions)
+    fetch('httpS://api.myisusu.com/users/login')
       .then((response) => response.JSON())
       .then((data) => setData(data))
       .catch((error) => console.log(error))
