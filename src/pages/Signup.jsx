@@ -1,5 +1,5 @@
-// import axios from 'axios'
-import React, { useEffect, useState} from 'react'
+import axios from 'axios'
+import React, { useEffect, useState, ajax } from 'react'
 // import useFetch from '../hooks/useFetch'
 import { Link } from 'react-router-dom'
 import { logo, signupGoody } from '../assets'
@@ -20,24 +20,27 @@ const Signup = () => {
 
   useEffect(() => {
     document.title = 'MyIsusu | Sign Up'
+    
     const data = JSON.stringify({
       last_name: 'Abodunrin',
       first_name: 'Matthew',
       phone_no: '0904786463',
       email: 'abodunrinmatthew@gmail.com',
       password: '1234567890',
-      api_key: 'V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU'
+      api_key: 'V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU',
     })
 
     const config = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/JSON' },
+      headers: { 'Content-Type': 'application/json' },
       body: data
-      
     }
 
     fetch('https://api.myisusu.com/users/create', config)
-      .then((response) => {return response.JSON()})
+      .then((response) => {
+        console.log(response)
+        return response.json()
+      })
       .then((create) => setData(create))
       .catch((error) => console.log(error))
   }, [])

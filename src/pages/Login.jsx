@@ -17,20 +17,15 @@ const Login = () => {
   useEffect(() => {
     document.title = 'MyIsusu | Login'
 
-    const createUser = {
-      email: 'abodunrinmatthew@gmail.com',
-      password: '1234567890',
-      api_key: 'V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU',
-    }
-
-    const requestOptions = {
+    const config = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/JSON' },
-      body: JSON.stringify(createUser),
+      headers: { 'Content-Type': 'application/json' },
     }
 
-    fetch('httpS://api.myisusu.com/users/login')
-      .then((response) => response.JSON())
+    fetch('https://api.myisusu.com/users/login', config)
+      .then((response) => {
+        return response.json()
+      })
       .then((data) => setData(data))
       .catch((error) => console.log(error))
   }, [])
@@ -44,7 +39,7 @@ const Login = () => {
   }
 
   const signIn = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     console.log(`The email and password is ${email} and ${password}`)
   }
 
