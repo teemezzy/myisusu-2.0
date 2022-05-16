@@ -1,5 +1,5 @@
-import axios from 'axios'
-import React, { useEffect, useState, ajax } from 'react'
+// import axios from 'axios'
+import React, { useEffect, useState} from 'react'
 // import useFetch from '../hooks/useFetch'
 import { Link } from 'react-router-dom'
 import { logo, signupGoody } from '../assets'
