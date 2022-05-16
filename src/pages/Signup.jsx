@@ -36,7 +36,7 @@ const Signup = () => {
       
     }
 
-    fetch('http://localhost:8080/create', config)
+    fetch('https://api.myisusu.com/users/create', config)
       .then((response) => {return response.JSON()})
       .then((create) => setData(create))
       .catch((error) => console.log(error))
