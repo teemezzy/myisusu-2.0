@@ -40,7 +40,7 @@ const Signup = () => {
         console.log(response)
         return response.json()
       })
-      .then((create) => setData(create))
+      .then((create) => console.log(create))
       .catch((error) => console.log(error))
   }, [])
 

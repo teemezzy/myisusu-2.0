@@ -17,16 +17,23 @@ const Login = () => {
   useEffect(() => {
     document.title = 'MyIsusu | Login'
 
+    const data = JSON.stringify({
+      email: 'abodunrinmatthew@gmail.com',
+      password: '1234567890',
+      api_key: 'V0VCX1NFQ1JFVF9LRVktRk9SX0lTU19DT05ORUNU',
+    })
+
     const config = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      body: data
     }
 
     fetch('https://api.myisusu.com/users/login', config)
       .then((response) => {
         return response.json()
       })
-      .then((data) => setData(data))
+      .then((login) => console.log(login))
       .catch((error) => console.log(error))
   }, [])
 
