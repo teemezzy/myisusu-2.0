@@ -11,11 +11,11 @@ import CustomInput, {
 
 const Signup = () => {
   const [data, setData] = useState(null)
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState('')
-  const [password, setPassword] = useState('')
+  const [firstName, setFirstName] = useState(false)
+  const [lastName, setLastName] = useState(false)
+  const [email, setEmail] = useState(false)
+  const [phoneNumber, setPhoneNumber] = useState(false)
+  const [password, setPassword] = useState(false)
 
   useEffect(() => {
     document.title = 'MyIsusu | Sign Up'
@@ -40,7 +40,7 @@ const Signup = () => {
         console.log(response)
         return response.json()
       })
-      .then((create) => console.log(create))
+      .then((create) => setData(create))
       .catch((error) => console.log(error))
   }, [])
 
@@ -66,6 +66,8 @@ const Signup = () => {
 
   const submit = (e) => {
     e.preventDefault()
+    
+
 
     console.log(
       `first_name: ${firstName}, last_name: ${lastName}, email: ${email}, phone_no: ${phoneNumber}, password: ${password}`

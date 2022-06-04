@@ -1,12 +1,20 @@
+import React from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
-// import useFetch from "./hooks/useFetch";
-import { Dashboard, HomePage, Login, Signup, Blog } from "./pages";
+import {
+  HomePage,
+  Login,
+  Signup,
+  Blog,
+  Dashboard,
+  Savings,
+  Vault,
+  ReferralID,
+  Calculator,
+} from "./pages";
+import { SideLayout } from "./component";
 
 function App() {
   const navigate = useNavigate();
-
-  // const { data, error, loading } = useFetch("https://schema.getpostman.com/json/collection/v2.1.0/collection.json");
-  // console.log(data)
 
   const signUp = () => {
     navigate("/signup");
@@ -16,20 +24,26 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <div>
       <Routes>
         <Route
           exact
-          path='/'
+          path="/"
           element={<HomePage signUp={signUp} login={login} />}
         />
-        <Route exact path='signup' element={<Signup login={login} />} />
-        <Route exact path='login' element={<Login />} />
-        <Route exact path='dashboard' element={<Dashboard />} />
-        <Route exact path='blog' element={<Blog />} />
+        <Route exact path="signup" element={<Signup login={login} />} />
+        <Route exact path="login" element={<Login />} />
+        <Route element={<SideLayout />}>
+          <Route index path="dashboard" element={<Dashboard />} />
+          <Route path="savings" element={<Savings />} />
+          <Route path="vault" element={<Vault />} />
+          <Route path="ref_id" element={<ReferralID />} />
+          <Route path="calculator" element={<Calculator />} />
+        </Route>
+        <Route exact path="blog" element={<Blog />} />
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App;

@@ -33,7 +33,7 @@ const Login = () => {
       .then((response) => {
         return response.json()
       })
-      .then((login) => console.log(login))
+      .then((login) => setData(login))
       .catch((error) => console.log(error))
   }, [])
 

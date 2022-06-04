@@ -6,7 +6,7 @@ const DrawerNav = ({ openNav, setOpenNav, signUp, login }) => {
   return (
     <>
       {navList.map((nav) => (
-        <p
+        <div
           key={nav.id}
           className='flex justify-center mb-12 items-center font-semibold text-googleMobile lg:text-googleDesktop hover:text-gold'
         >
@@ -14,7 +14,8 @@ const DrawerNav = ({ openNav, setOpenNav, signUp, login }) => {
             {nav.name}
           </Link>
           <span className='cursor-pointer'>{nav.icons}</span>
-        </p>
+          
+        </div>
       ))}
 
       <div className='sm:hidden items-center gap-10 flex flex-col'>
