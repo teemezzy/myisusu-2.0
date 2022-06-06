@@ -20,7 +20,7 @@ const Sidebar = () => {
           <img src={logo} alt="" className="w-16" />
         </div>
         {sideList.map((side) => (
-          <div key={1} className=" w-40 mx-16 text-sm">
+          <div key={side.id} className=" w-40 mx-16 text-sm">
             <NavLink
               to={side.path}
               onClick={() => sideClick(side.id)}
